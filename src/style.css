@@ -1,0 +1,164 @@
+body {
+    background-color: white;
+    
+}
+
+div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    
+}
+h1{
+    max-width: 360px;
+    font-weight: 100;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+button{
+    background-color : #0976B2;
+    color : white;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+} 
+
+input{
+    margin-top: 20px;
+    width: 295px;
+    height: 42px;
+}
+
+#buttonGotoRegister{
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 0px;
+    font-size: 100%;
+    background-color :#42b72a;    ;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#buttonLogin{
+    font-weight: bold;
+    font-size: 109%;
+}
+#buttonLoginGoogle{
+    background-color:rgba(9, 118,178, 10%);
+    color: black;
+    font-weight: bold;
+    width: 309px;
+    height: 43px;
+    font-size: 92%;
+    margin-top: 2rem;
+}
+#buttonRegister{
+    font-weight: bold;
+    font-size: 94%;
+}
+#buttonHome{
+    font-weight: bold;
+    font-size: 94%;
+}
+#buttonLogout{
+    font-weight: bold;
+    font-size: 94%;
+}
+img {
+    width: 175px;
+    
+}
+
+#homeDiv{
+    background-color: hsl(0deg 0% 0% / 2%);
+    border: 3px solid black;
+    padding: 21px;
+    border-radius: 10px;
+}
+
+#registerDiv{
+    background-color: hsl(0deg 0% 0% / 2%);
+    border: 3px solid black;
+    padding: 21px;
+    border-radius: 10px;
+}
+
+#or{
+    margin-top: -9px;
+}
+#line1{
+    width: 44%;
+    border-top: 2px solid #0976B2;
+    margin-left: 166px;
+    margin-top: 21px;
+}
+
+#line2{
+    width: 44%;
+    border-top: 2px solid #0976B2;
+    margin-right: 165px;
+    margin-top: -10px;
+}
+
+
+.icon {
+    width: 30px;
+    border: 0px;
+    position: relative;
+    bottom: 40px;
+    left: 130px;
+    
+    
+} 
+
+#openEye, #closeEye {
+    cursor: pointer;
+}
+  
+#iconGoogle {
+   width: 30px; 
+    border: 0px;
+    position: relative;
+    bottom: 35px;
+    right: 132px; 
+} 
+
+#title{
+    display: flex;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: 36px;
+    width: 189px;
+}
+#imgHeader{
+    margin-left: 76px;
+}
+#menu{
+    width: 23px;
+}
+#post{
+    font-weight: bold;
+    font-size: 94%;
+    border-radius: 25px;
+    text-align: center;
+}
+
+#publish{
+    font-size: 94%;
+    border-radius: 30px;
+    width: 75px;
+    background-color: white;
+    color: #0976B2;
+}
+
+#publish:hover{
+    background-color:#0976B2;
+    color: white;
+}
