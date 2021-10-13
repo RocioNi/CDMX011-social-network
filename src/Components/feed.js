@@ -67,6 +67,8 @@ export const Feed = () => {
   modalDiv.style.display = 'none';
   console.log(modalDiv);
 
+
+//Posts
   firebase.auth().onAuthStateChanged((user) => {
     const uid = user.uid;
     // Leer documentos
@@ -97,7 +99,7 @@ export const Feed = () => {
 
         // containerPostDiv.getElementById('btn_like');
       });
-
+       //Like 
       containerPostDiv.querySelectorAll('.btn_like').forEach((button) => {
         button.addEventListener('click', (e) => {
           const Likes = e.target.closest('.post_history').dataset.likes;
@@ -114,7 +116,7 @@ export const Feed = () => {
           }
         });
       });
-
+      //Borrar Post
       containerPostDiv.querySelectorAll('.btn_delete').forEach((button) => {
         button.addEventListener('click', (e) => {
           const answer = confirm('¿Eliminar publicación?');
@@ -127,7 +129,7 @@ export const Feed = () => {
           }
         });
       });
-
+      //Editar Post
       containerPostDiv.querySelectorAll('.btn_edit').forEach((button) => {
         button.addEventListener('click', (e) => {
         //   console.log('llamada de boton editar');
@@ -142,7 +144,7 @@ export const Feed = () => {
       });
     });
   });
-
+   //Cerrar sesion
   const buttonLogout = document.createElement('button');
   buttonLogout.textContent = 'Cerrar Sesión';
   buttonLogout.id = 'buttonLogout';
@@ -150,15 +152,5 @@ export const Feed = () => {
   buttonLogout.addEventListener('click', () => {
     logout();
   });
-  /*
-  feedDiv.appendChild(title);
-  feedDiv.appendChild(barraDiv);
-  barraDiv.appendChild(iconLight);
-  feedDiv.appendChild(post);
-  feedDiv.appendChild(publish);
-  feedDiv.appendChild(modalDiv);
-  feedDiv.appendChild(containerPostDiv);
-  feedDiv.appendChild(buttonLogout);
-  */
   return feedDiv;
 };

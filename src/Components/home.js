@@ -50,10 +50,6 @@ export const Home = () => {
   buttonGoToRegister.textContent = '¿No tienes cuenta? Registrate';
   buttonGoToRegister.id = 'buttonGotoRegister';
 
-  // const buttonLogout = document.createElement('button');
-  // buttonLogout.textContent = 'Cerrar sesión';
-  // buttonLogout.id = 'buttonLogout';
-
   buttonGoToRegister.addEventListener('click', () => onNavigate('/register'));
 
   buttonLogin.addEventListener('click', (event) => {
@@ -84,10 +80,6 @@ export const Home = () => {
       inputPassword.type = 'text';
     }
   });
-
-  // buttonLogout.addEventListener('click', (event) => {
-  //   logout();
-  // });
 
   HomeDiv.appendChild(inputEmail);
   HomeDiv.appendChild(iconEmail);
