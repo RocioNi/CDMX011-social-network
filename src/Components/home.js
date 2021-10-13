@@ -64,7 +64,7 @@ export const Home = () => {
     }
   });
 
-  //Login con Google
+  // Login con Google
 
   buttonLoginGoogle.addEventListener('click', async (event) => {
     try {
